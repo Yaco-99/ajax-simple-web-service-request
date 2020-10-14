@@ -1,0 +1,59 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+body {
+  height: 100vh;
+  max-width: 100vw;
+  background: url("../images/background.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Georgia, serif;
+  text-shadow: 1px 1px 2px black;
+}
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-size: 24px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+}
+blockquote p {
+  font-size: 26px;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -35px;
+  color: rgba(183, 34, 212, 0.6);
+}
+.quote-row {
+  position: relative;
+}
+.first-quote-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  right: 0;
+  opacity: 0.6;
+}
